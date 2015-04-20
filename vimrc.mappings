@@ -18,6 +18,12 @@ noremap k gk
 nnoremap <leader>sa ggVG
 inoremap <leader>sa <esc>ggVG
 
+" replace all inside closest brackets
+
+inoremap <Leader>d( <esc>%ci(
+inoremap <Leader>d[ <esc>%ci[
+inoremap <Leader>d{ <esc>%ci{
+
 
 " End/Start of line motion keys act relative to row/wrap width in the
 " presence of `:set wrap`, and relative to line for `:set nowrap`.
