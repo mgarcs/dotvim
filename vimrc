@@ -1,4 +1,4 @@
-set nocompatible        
+set nocompatible
 
 " load bundle
 if filereadable(expand("~/.vimrc.bundles"))
@@ -163,30 +163,10 @@ autocmd FileType haskell setlocal commentstring=--\ %s
 autocmd FileType haskell,rust setlocal nospell
 
 
-" ==================================================================
-"                           Key Mappings
-" ==================================================================
-
-if filereadable(expand("~/.vimrc.mappings"))
-    source ~/.vimrc.mappings
-endif
-
-
-
-" ==================================================================
-"                           Plugin Configs
-" ==================================================================
-
-if filereadable(expand("~/.vimrc.plugins"))
-    source ~/.vimrc.plugins
-endif
-
 
 " ==================================================================
 "                           GUI Settings
 " ==================================================================
-
-
 
 if has("gui_macvim")
   let g:airline_powerline_fonts = 1
@@ -217,4 +197,22 @@ else
         set t_Co=256            " Enable 256 colors to stop the CSApprox warning and make xterm vim shine
     endif
     "set term=builtin_ansi       " Make arrow and other keys work
+endif
+
+
+" ==================================================================
+"                           Key Mappings
+" ==================================================================
+
+if filereadable(expand("~/.vimrc.mappings"))
+    source ~/.vimrc.mappings
+endif
+
+
+" ==================================================================
+"                           Plugin Configs
+" ==================================================================
+
+if filereadable(expand("~/.vimrc.plugins"))
+    source ~/.vimrc.plugins
 endif

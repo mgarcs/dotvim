@@ -8,6 +8,6 @@ Installation
 ------------
 
 ```
-wget https://raw.github.com/mgarcs/dotvim/master/bootstrap.sh | sh
+wget -qO- https://raw.github.com/mgarcs/dotvim/master/bootstrap.sh | sh
 ```
 

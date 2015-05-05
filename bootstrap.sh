@@ -113,7 +113,7 @@ create_symlinks() {
 
     lnif "$endpath/vimrc"              "$HOME/.vimrc"
     lnif "$endpath/vimrc.bundles"      "$HOME/.vimrc.bundles"
-    lnif "$endpath/vimrc.bundles"      "$HOME/.vimrc.bundles"
+    lnif "$endpath/vimrc.plugins"      "$HOME/.vimrc.plugins"
     lnif "$endpath/vimrc.bundles"      "$HOME/.vimrc.mappings"
     lnif "$endpath/vim"                "$HOME/.vim"
 
