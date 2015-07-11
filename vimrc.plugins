@@ -92,7 +92,7 @@
         let NERDTreeShowBookmarks=1
         let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$']
         let NERDTreeChDirMode=0
-        let NERDTreeQuitOnOpen=1
+        let NERDTreeQuitOnOpen=0
         let NERDTreeMouseMode=2
         let NERDTreeShowHidden=1
         let NERDTreeKeepTreeInNewTab=1
@@ -546,7 +546,8 @@ let g:wildfire_objects = {
     if isdirectory(expand("~/.vim/bundle/vim-airline/"))
         let g:airline_theme = 'luna'
         
-        if  !exists('g:airline_powerline_fonts')
+        if !has("gui_running")
+            let g:airline_powerline_fonts = 0
             " Use the default set of separators with a few customizations
             let g:airline_symbols = {}
 
@@ -555,6 +556,8 @@ let g:wildfire_objects = {
             let g:airline_symbols.linenr ='␤'
             let g:airline_symbols.branch = '⎇'
             let g:airline_symbols.paste = 'ρ'                
+        else
+          let g:airline_powerline_fonts = 1
         endif
     endif
 " }

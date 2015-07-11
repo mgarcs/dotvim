@@ -169,7 +169,7 @@ autocmd FileType haskell,rust setlocal nospell
 " ==================================================================
 
 if has("gui_macvim")
-  let g:airline_powerline_fonts = 1
+  ""let g:airline_powerline_fonts = 1
   set guifont=Monaco\ for\ Powerline:h12 "TODO: include these fonts by default
 
   " No toolbars, menu or scrollbars in the GUI
